@@ -46,6 +46,8 @@ NavSafety::NavSafety() :
   retractPos[4] = .515;
   retractPos[5] = -1.745;
 
+  baseFeedbackLastPublished = ros::Time::now();
+
   asSafeMove.start();
 }
 
@@ -100,7 +102,11 @@ void NavSafety::safeBaseCommandCallback(const geometry_msgs::Twist::ConstPtr& ms
     if (!isArmContained())
     {
       //ignore movement command if arm is in a dangerous position
-      publishArmNotContainedError();
+      if (ros::Time::now().toSec() - baseFeedbackLastPublished.toSec() > 5.0)
+      {
+        publishArmNotContainedError();
+        baseFeedbackLastPublished = ros::Time::now();
+      }
       return;
     }
     if (x < BOUNDARY_X && y > BOUNDARY_Y)

@@ -116,6 +116,8 @@ private:
   ros::ServiceClient jacoCartesianClient;
   ros::ServiceServer stopBaseNavServer;
 
+  ros::Time baseFeedbackLastPublished;
+
   actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> acMoveBase;
   actionlib::SimpleActionClient<wpi_jaco_msgs::HomeArmAction> acHome;
 
