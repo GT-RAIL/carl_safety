@@ -2,6 +2,12 @@
 Changelog for package carl_safety
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.7 (2015-04-27)
+------------------
+* Merge branch 'develop' of https://github.com/WPI-RAIL/carl_safety into develop
+* Added time check to arm not contained feedback to prevent multiple repeated feedback messages
+* Contributors: David Kent
+
 0.0.6 (2015-04-17)
 ------------------
 * Added error feedback messages
