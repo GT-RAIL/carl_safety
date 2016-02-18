@@ -1,4 +1,4 @@
-carl_safety [![Build Status](https://api.travis-ci.org/WPI-RAIL/carl_safety.png)](https://travis-ci.org/WPI-RAIL/carl_safety)
+carl_safety [![Build Status](https://api.travis-ci.org/GT-RAIL/carl_safety.png)](https://travis-ci.org/GT-RAIL/carl_safety)
 ===========
 
 #### Remote User Safety Nodes for CARL
