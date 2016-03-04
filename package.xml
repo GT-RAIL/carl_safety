@@ -5,7 +5,6 @@
   <description>Remote User Safety Nodes for CARL</description>
 
   <maintainer email="dekent@gatech.edu">David Kent</maintainer>
-  <maintainer email="rctoris@wpi.edu">Russell Toris</maintainer>
   <author email="dekent@gatech.edu">David Kent</author>
   <author email="bhetherman@wpi.edu">Brian Hetherman</author>
   <license>BSD</license>
